@@ -1,0 +1,2 @@
+1. open the code folder
+2. run "smart-eco-city.exe"

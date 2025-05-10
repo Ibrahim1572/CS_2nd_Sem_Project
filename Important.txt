@@ -1,0 +1,5 @@
+1. The GUI is made in QT and is in the form
+   of .exe file.
+
+2. The Non GUI code contains only the .cpp
+   file and it works on terminal.
