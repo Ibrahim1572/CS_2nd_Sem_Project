@@ -29,7 +29,7 @@ public:
     QLabel *titleLabel;
     QHBoxLayout *mainLayout;
     QVBoxLayout *leftLayout;
-    QPushButton *aboutButton;
+    QPushButton *ecoActivityButton;
     QPlainTextEdit *mapText;
     QPlainTextEdit *messageBox;
     QHBoxLayout *buttonPanel;
@@ -71,9 +71,9 @@ public:
         mainLayout->setObjectName("mainLayout");
         leftLayout = new QVBoxLayout();
         leftLayout->setObjectName("leftLayout");
-        aboutButton = new QPushButton(centralwidget);
-        aboutButton->setObjectName("aboutButton");
-        aboutButton->setStyleSheet(QString::fromUtf8("\n"
+        ecoActivityButton = new QPushButton(centralwidget);
+        ecoActivityButton->setObjectName("ecoActivityButton");
+        ecoActivityButton->setStyleSheet(QString::fromUtf8("\n"
 "            background-color: white;\n"
 "            border: 2px solid #444;\n"
 "            padding: 15px 40px;\n"
@@ -82,7 +82,7 @@ public:
 "            border-radius: 10px;\n"
 "           "));
 
-        leftLayout->addWidget(aboutButton);
+        leftLayout->addWidget(ecoActivityButton);
 
         mapText = new QPlainTextEdit(centralwidget);
         mapText->setObjectName("mapText");
@@ -242,7 +242,7 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Smart Eco City", nullptr));
         titleLabel->setText(QCoreApplication::translate("MainWindow", "SMART ECO CITY", nullptr));
-        aboutButton->setText(QCoreApplication::translate("MainWindow", "ABOUT", nullptr));
+        ecoActivityButton->setText(QCoreApplication::translate("MainWindow", "ECO ACTIVITY", nullptr));
         residentialButton->setText(QCoreApplication::translate("MainWindow", "BUILD RESIDENTIAL", nullptr));
         commercialButton->setText(QCoreApplication::translate("MainWindow", "BUILD COMMERCIAL", nullptr));
         industrialButton->setText(QCoreApplication::translate("MainWindow", "BUILD INDUSTRIAL", nullptr));
